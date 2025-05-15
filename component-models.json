@@ -4,13 +4,13 @@
     "fields": [
       {
         "component": "reference",
-        "name": "img:nth-child(3)[src]",
+        "name": "Image",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
-        "name": "img:nth-child(3)[alt]",
+        "name": "image-alt",
         "label": "Alt Text"
       }
     ]
@@ -37,14 +37,14 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "div:nth-child(1)",
+        "name": "summary",
         "value": "",
         "label": "Summary",
         "required": true
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string",
@@ -71,7 +71,7 @@
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
@@ -96,7 +96,7 @@
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "text",
         "label": "Text",
         "valueType": "string"
       }
@@ -185,13 +185,13 @@
     "fields": [
       {
         "component": "text",
-        "name": "div:nth-child(1)>p:nth-child(1)",
+        "name": "tab-name",
         "valueType": "string",
         "label": "Tab Name"
       },
       {
         "component": "richtext",
-        "name": "div:nth-child(2)",
+        "name": "content",
         "label": "Content",
         "valueType": "string"
       }
@@ -202,20 +202,20 @@
     "fields": [
       {
         "component": "text",
-        "name": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]",
+        "name": "video-url",
         "label": "Video URL",
         "valueType": "string",
         "required": true
       },
       {
         "component": "text",
-        "name": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)",
+        "name": "video-url-text",
         "label": "Video URL Text",
         "valueType": "string"
       },
       {
         "component": "reference",
-        "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(2)>img:nth-child(3)[src]",
+        "name": "poster-image",
         "label": "Poster Image",
         "valueType": "string"
       }
