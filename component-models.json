@@ -65,7 +65,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "card image alt",
+        "name": "card-image-alt",
         "label": "Image Alt",
         "multi": false
       },
@@ -84,7 +84,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "Background Image",
+        "name": "Background-Image",
         "label": "Background Image",
         "multi": false
       },
@@ -107,13 +107,13 @@
     "fields": [
       {
         "component": "text",
-        "name": "Fragment URL",
+        "name": "Fragment-URL",
         "label": "Fragment URL",
         "required": true
       },
       {
         "component": "text",
-        "name": "Fragment URL Text",
+        "name": "Fragment-URL-Text",
         "label": "Fragment URL Text"
       }
     ]
@@ -168,13 +168,13 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "Search URL",
+        "name": "Search-URL",
         "label": "Search URL",
         "required": true
       },
       {
         "component": "text",
-        "name": "Search URL Text",
+        "name": "Search-URL-Text",
         "label": "Search URL Text",
         "valueType": "string"
       }
