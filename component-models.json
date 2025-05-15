@@ -91,7 +91,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "Bacgkround-Alt",
+        "name": "Background-Alt",
         "label": "Bacgkround Alt"
       },
       {
@@ -113,7 +113,7 @@
       },
       {
         "component": "text",
-        "name": "Fragment-URL-Text",
+        "name": "fragmentURLText",
         "label": "Fragment URL Text"
       }
     ]
@@ -174,7 +174,7 @@
       },
       {
         "component": "text",
-        "name": "Search-URL-Text",
+        "name": "SearchURLText",
         "label": "Search URL Text",
         "valueType": "string"
       }
