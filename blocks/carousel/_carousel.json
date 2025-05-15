@@ -1,53 +1,48 @@
 {
   "definitions": [
     {
-      "title": "Cards",
-      "id": "cards",
+      "title": "Carousel",
+      "id": "carousel",
       "plugins": {
         "da": {
-          "name": "cards",
+          "name": "carousel",
           "rows": 1,
           "columns": 2
         }
-      },
-      "model": "cards",
-      "filter": "cards"
+      }
     },
     {
-      "title": "Card",
-      "id": "card",
+      "title": "Carousel Slide",
+      "id": "carousel-item",
       "plugins": {
         "da": {
-          "name": "card",
+          "name": "carousel-item",
           "rows": 2,
           "columns": 0
         }
-      },
-      "model": "card"
+      }
     }
   ],
   "models": [
     {
-      "id": "card",
+      "id": "carousel-item",
       "fields": [
         {
           "component": "reference",
           "valueType": "string",
           "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
-          "label": "Image",
+          "label": "Background Image",
           "multi": false
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
-          "label": "Image Alt",
-          "multi": false
+          "label": "Bacgkround Alt"
         },
         {
           "component": "richtext",
           "name": "div:nth-child(2)",
-          "value": "",
           "label": "Text",
           "valueType": "string"
         }
@@ -56,10 +51,8 @@
   ],
   "filters": [
     {
-      "id": "cards",
-      "components": [
-        "card"
-      ]
+      "id": "carousel",
+      "components": ["carousel-item"]
     }
   ]
 }

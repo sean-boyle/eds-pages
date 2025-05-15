@@ -25,10 +25,6 @@ export default async function decorate(block) {
     else tbody.append(row);
     [...child.children].forEach((col) => {
       const cell = buildCell(header ? i : i + 1);
-      const align = col.getAttribute('data-align');
-      const valign = col.getAttribute('data-valign');
-      if (align) cell.style.textAlign = align;
-      if (valign) cell.style.verticalAlign = valign;
       cell.innerHTML = col.innerHTML;
       row.append(cell);
     });
