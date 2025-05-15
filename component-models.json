@@ -58,7 +58,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "card image",
+        "name": "card-image",
         "label": "Image",
         "multi": false
       },
@@ -91,7 +91,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "Bacgkround Alt",
+        "name": "Bacgkround-Alt",
         "label": "Bacgkround Alt"
       },
       {
