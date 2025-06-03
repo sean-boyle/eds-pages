@@ -78,30 +78,7 @@
       }
     ]
   },
-  {
-    "id": "carousel-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "Background-Image",
-        "label": "Background Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "Background-Alt",
-        "label": "Bacgkround Alt"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
+
   {
     "id": "fragment",
     "fields": [
