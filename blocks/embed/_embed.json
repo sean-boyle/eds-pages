@@ -1,5 +1,16 @@
 {
-    "definitions": [],
+    "definitions": [{
+      "title": "Text",
+      "id": "text",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/text/v1/text",
+            "template": {}
+          }
+        }
+      }
+    }],
     "models": [],
     "filters": []
 }
