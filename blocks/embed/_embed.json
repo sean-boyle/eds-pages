@@ -1,12 +1,5 @@
 {
     "definitions": [],
-    "models": [
-        {
-            "id": "embed",
-            "fields": [
-              
-            ]
-        }
-    ],
+    "models": [],
     "filters": []
 }
