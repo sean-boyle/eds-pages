@@ -47,10 +47,25 @@
         "image",
         "button",
         "title",
-        "hero",
+        "accordion",
+        "accordion-help",
         "cards",
+        "cards-article",
+        "carousel",
+        "carousel-hero",
         "columns",
-        "fragment"
+        "columns-icons",
+        "columns-services",
+        "embed",
+        "form",
+        "fragment",
+        "hero",
+        "hero-locator",
+        "quote",
+        "search",
+        "tabs",
+        "table",
+        "video"
       ]
     }
   ]

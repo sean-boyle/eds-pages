@@ -8,22 +8,28 @@
   {
     "id": "section",
     "components": [
-      "accordion",
-      "button",
-      "cards",
-      "carousel",
-      "columns",
-      "embed",
-      "fragment",
-      "form",
-      "hero",
+      "text",
       "image",
+      "button",
+      "title",
+      "accordion",
+      "accordion-help",
+      "cards",
+      "cards-article",
+      "carousel",
+      "carousel-hero",
+      "columns",
+      "columns-icons",
+      "columns-services",
+      "embed",
+      "form",
+      "fragment",
+      "hero",
+      "hero-locator",
       "quote",
       "search",
       "tabs",
       "table",
-      "text",
-      "title",
       "video"
     ]
   },
@@ -43,6 +49,21 @@
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   {
