@@ -1,0 +1,39 @@
+{
+  "variantName": "accordion-legal",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-03-16T21:26:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbc.com/our-impact/athletes/request-an-olympian.html",
+    "originPage": "RBC Request an Olympian page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "legal-disclaimer",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "expandable summary + legal text body",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "legal disclaimer sections",
+      "terms and conditions pages",
+      "privacy policy expandable sections",
+      "compliance notice areas"
+    ],
+    "notSuitableFor": [
+      "FAQ sections with multiple items",
+      "feature lists with rich media"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/our-impact/athletes/request-an-olympian"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-16T21:26:00.000Z"
+  }
+}

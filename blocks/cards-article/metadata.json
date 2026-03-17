@@ -1,0 +1,29 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-17T20:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbcroyalbank.com/personal.html",
+    "originPage": "RBC Personal Banking homepage",
+    "blockPosition": "lower"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "standard",
+    "purpose": "article-preview",
+    "imagePattern": "thumbnail"
+  },
+  "contentPattern": {
+    "structure": "image + article title with link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "usageHistory": [
+    {
+      "url": "https://www.rbcroyalbank.com/personal.html",
+      "date": "2026-03-17",
+      "sectionId": "section-4-articles"
+    }
+  ]
+}

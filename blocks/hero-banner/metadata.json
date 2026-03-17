@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-16T21:26:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbc.com/our-impact/athletes/request-an-olympian.html",
+    "originPage": "RBC Request an Olympian page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "informational-hero",
+    "imagePattern": "video-poster"
+  },
+  "contentPattern": {
+    "structure": "heading + description + video",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "informational pages with video content",
+      "landing pages with text + media layout",
+      "campaign pages with video hero"
+    ],
+    "notSuitableFor": [
+      "product pages with large background images",
+      "minimal text-only heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/our-impact/athletes/request-an-olympian"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-16T21:26:00.000Z"
+  }
+}

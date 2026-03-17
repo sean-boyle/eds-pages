@@ -1,0 +1,29 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-03-17T20:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbcroyalbank.com/personal.html",
+    "originPage": "RBC Personal Banking homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "rich",
+    "purpose": "hero-promotional",
+    "imagePattern": "background-fullwidth"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + description + CTA buttons per slide",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "usageHistory": [
+    {
+      "url": "https://www.rbcroyalbank.com/personal.html",
+      "date": "2026-03-17",
+      "sectionId": "section-1-hero-carousel"
+    }
+  ]
+}

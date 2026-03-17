@@ -1,0 +1,29 @@
+{
+  "variantName": "accordion-help",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-03-17T20:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbcroyalbank.com/personal.html",
+    "originPage": "RBC Personal Banking homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "help-topics",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "6 accordion panels with topic title + list of links",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usageHistory": [
+    {
+      "url": "https://www.rbcroyalbank.com/personal.html",
+      "date": "2026-03-17",
+      "sectionId": "section-3-help"
+    }
+  ]
+}

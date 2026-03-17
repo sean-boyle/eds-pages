@@ -1,0 +1,44 @@
+{
+  "definitions": [
+    {
+      "title": "Carousel Hero",
+      "id": "carousel-hero",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Carousel Hero",
+              "model": "carousel-hero"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "carousel-hero",
+      "fields": [
+        {
+          "component": "group",
+          "name": "slide",
+          "label": "Slide",
+          "multi": true,
+          "fields": [
+            {
+              "component": "reference",
+              "name": "image",
+              "label": "Background Image"
+            },
+            {
+              "component": "richtext",
+              "name": "content",
+              "label": "Slide Content"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

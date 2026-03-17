@@ -1,0 +1,29 @@
+{
+  "variantName": "columns-services",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-17T20:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbcroyalbank.com/personal.html",
+    "originPage": "RBC Personal Banking homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "rich",
+    "purpose": "service-cards",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "3 columns with headings + link lists + images",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "usageHistory": [
+    {
+      "url": "https://www.rbcroyalbank.com/personal.html",
+      "date": "2026-03-17",
+      "sectionId": "section-2-welcome"
+    }
+  ]
+}

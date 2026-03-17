@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.rbcroyalbank.com/personal.html",
+  "path": "personal",
+  "timestamp": "2026-03-17T20:50:48.705Z",
+  "title": "Welcome to RBC Personal Banking - RBC Royal Bank",
+  "template": "personal",
+  "blocks": [
+    "carousel-hero",
+    "columns-services",
+    "columns-icons",
+    "accordion-help",
+    "cards-article",
+    "hero-locator"
+  ]
+}

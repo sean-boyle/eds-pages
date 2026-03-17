@@ -1,0 +1,29 @@
+{
+  "variantName": "hero-locator",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-17T20:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.rbcroyalbank.com/personal.html",
+    "originPage": "RBC Personal Banking homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "locator-search",
+    "imagePattern": "background-fullwidth"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + search CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "usageHistory": [
+    {
+      "url": "https://www.rbcroyalbank.com/personal.html",
+      "date": "2026-03-17",
+      "sectionId": "section-5-branch-locator"
+    }
+  ]
+}

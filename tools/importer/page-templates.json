@@ -1,0 +1,115 @@
+{
+  "templates": [
+    {
+      "name": "personal",
+      "urls": [
+        "https://www.rbcroyalbank.com/personal.html"
+      ],
+      "description": "RBC Royal Bank personal banking homepage with hero carousel, product cards, customer service, help topics, articles, and branch locator",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "div.hero-carousel-container"
+          ]
+        },
+        {
+          "name": "columns-services",
+          "instances": [
+            "main > section:not([class]) div.grid-wpr.eh-wpr"
+          ]
+        },
+        {
+          "name": "columns-icons",
+          "instances": [
+            "section.help-section ul.col-wpr"
+          ]
+        },
+        {
+          "name": "accordion-help",
+          "instances": [
+            "div.accordion#help-accordion"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            "section.discover-and-learn-section div.grid-wpr.eh-wpr"
+          ]
+        },
+        {
+          "name": "hero-locator",
+          "instances": [
+            "section.branch-locator-section"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero-carousel",
+          "name": "Hero Carousel",
+          "selector": "main > div.banner-container",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-welcome",
+          "name": "Welcome and Products",
+          "selector": [
+            "main > section:not([class])",
+            "main > section:nth-of-type(1)"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-services"
+          ],
+          "defaultContent": [
+            "main > section:not([class]) h1",
+            "main > section:not([class]) > div.section-inner > p"
+          ]
+        },
+        {
+          "id": "section-3-help",
+          "name": "Help Topics",
+          "selector": "section.help-section",
+          "style": null,
+          "blocks": [
+            "columns-icons",
+            "accordion-help"
+          ],
+          "defaultContent": [
+            "section.help-section h2",
+            "form#intellResponse_form"
+          ]
+        },
+        {
+          "id": "section-4-articles",
+          "name": "My Money Matters",
+          "selector": "section.discover-and-learn-section",
+          "style": null,
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            "section.discover-and-learn-section h2",
+            "section.discover-and-learn-section > div.section-inner > p",
+            "section.discover-and-learn-section div.text-center"
+          ]
+        },
+        {
+          "id": "section-5-branch-locator",
+          "name": "Branch Locator",
+          "selector": "section.branch-locator-section",
+          "style": "dark",
+          "blocks": [
+            "hero-locator"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}
