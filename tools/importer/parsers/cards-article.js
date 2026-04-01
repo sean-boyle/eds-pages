@@ -1,41 +1,70 @@
 /* eslint-disable */
 /* global WebImporter */
+
 /**
  * Parser for cards-article.
- * Base: cards. Source: https://www.rbcroyalbank.com/personal.html
- * Generated: 2026-03-17
- *
- * Cards block: each row = [image, content].
- * Extracts article preview cards from section.discover-and-learn-section div.grid-wpr.eh-wpr > div.grid-one-third.
+ * Base: cards. Source: https://diversity.rbc.com/
+ * Element is the parent container (.section-inner.article-blocks or .section-inner).
+ * Extracts article cards from grid layout (div.grid-one-third items).
+ * Block library: 2 columns per row — image | content.
+ * xwalk model: card group (multi) with image + content fields.
  */
 export default function parse(element, { document }) {
-  const cards = element.querySelectorAll(':scope > .grid-one-third');
+  const cards = element.querySelectorAll('.grid-one-third');
   const cells = [];
 
   cards.forEach((card) => {
-    // Extract article image
-    const img = card.querySelector('img');
+    // Column 1: Image
+    const img = card.querySelector('.post-thumb.img-std img, .callout-img.img-std img');
+    const imageFrag = document.createDocumentFragment();
+    imageFrag.appendChild(document.createComment(' field:image '));
+    if (img) {
+      const picture = document.createElement('picture');
+      const newImg = document.createElement('img');
+      newImg.src = img.src;
+      newImg.alt = img.alt || '';
+      picture.appendChild(newImg);
+      imageFrag.appendChild(picture);
+    }
 
-    // Extract article title/heading
-    const heading = card.querySelector('h2, h3, h4, .callout-copy h2, .callout-copy h3');
+    // Column 2: Content (title + date + excerpt + link)
+    const contentFrag = document.createDocumentFragment();
+    contentFrag.appendChild(document.createComment(' field:content '));
 
-    // Extract article link
-    const link = card.querySelector('a');
+    const title = card.querySelector('h4');
+    if (title) {
+      const h = document.createElement('h4');
+      h.textContent = title.textContent.trim();
+      contentFrag.appendChild(h);
+    }
 
-    // Build image cell
-    const imageCell = img ? [img] : [];
+    const date = card.querySelector('.text-script');
+    if (date) {
+      const p = document.createElement('p');
+      p.textContent = date.textContent.trim();
+      contentFrag.appendChild(p);
+    }
 
-    // Build content cell - title wrapped in link if available
-    const contentCell = [];
-    if (heading) contentCell.push(heading);
-    if (link && !heading) contentCell.push(link);
+    const excerpt = card.querySelector('.post-excerpt');
+    if (excerpt) {
+      const p = document.createElement('p');
+      p.textContent = excerpt.textContent.trim();
+      contentFrag.appendChild(p);
+    }
 
-    cells.push([imageCell, contentCell]);
+    const link = card.querySelector('a.post, a.link');
+    if (link && link.href) {
+      const a = document.createElement('a');
+      a.href = link.href;
+      a.textContent = 'View More';
+      const p = document.createElement('p');
+      p.appendChild(a);
+      contentFrag.appendChild(p);
+    }
+
+    cells.push([imageFrag, contentFrag]);
   });
 
-  const block = WebImporter.Blocks.createBlock(document, {
-    name: 'cards-article',
-    cells,
-  });
+  const block = WebImporter.Blocks.createBlock(document, { name: 'cards-article', cells });
   element.replaceWith(block);
 }
