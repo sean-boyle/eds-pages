@@ -33,6 +33,14 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Grey",
+              "value": "grey"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
             }
           ]
         }
@@ -60,6 +68,7 @@
         "form",
         "fragment",
         "hero",
+        "hero-banner",
         "hero-locator",
         "quote",
         "search",
